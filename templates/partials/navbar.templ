@@ -1,0 +1,24 @@
+package partials
+
+templ Navbar() {
+	<nav class="navbar bg-blue-950 text-primary-content fixed top-0 z-11">
+		<div class="navbar-start">
+			<a hx-swap="transition:true" class="btn btn-ghost text-slate-50" href="/">
+				Calories calculator
+			</a>
+		</div>
+		<div class="navbar-end">
+                <span class="font-bold text-indigo-700 mr-8">
+                    { "Volodya" }
+                </span>
+                <button
+                    hx-swap="transition:true"
+                    hx-swap-oob="true"
+                    hx-target="body"
+                    hx-push-url="true"
+                    class="btn btn-ghost text-slate-50"
+                >
+                </button>
+		</div>
+	</nav>
+}
